@@ -1,0 +1,26 @@
+/* Navbar Brand Container */
+.navbar-brand {
+    display: flex;
+    flex-direction: column; /* Stacks the text vertically */
+    align-items: center; /* Centers the text horizontally */
+    text-align: center;
+  }
+  
+  /* "Vaisaali" Styling */
+  .navbar-brand .vaisaali {
+    font-family: 'Imprint MT Shadow ',cursive; /* Stylish font for Vaisaali */
+    font-size: 2.5rem; /* Larger font size */
+    color: #ffffff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    margin: 0; /* No extra spacing */
+  }
+  
+  
+  .navbar-brand .priyankaa {
+    font-family: 'Forte'; /* Clean and simple font */
+    font-size: 2rem; /* Smaller font size */
+    color: #e50e8b; /* Light pink color */
+    margin: 0; /* No extra spacing */
+    font-weight: bold; /* Emphasized text */
+  }
+  

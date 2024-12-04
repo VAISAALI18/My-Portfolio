@@ -1,0 +1,49 @@
+/* Contact Section Styling */
+#contact {
+    background-color: #f6b3ce;
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    color: #0c0c0c; /* Dark text for heading */
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  .contact-link {
+    color: #0e0e0e; /* Bootstrap primary color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    color: #0c0c0c; /* Darker blue on hover */
+  }
+  
+  /* Icons styling */
+  .contact-link i {
+    color: #ff69b4;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-link:hover i {
+    color: #ff3385;
+    border-color: #ff3385;
+    transform: scale(1.2); /* Slight zoom effect */
+  }
+  
+  /* List Styling */
+  .list-inline-item {
+    margin: 0 15px;
+  }
+  

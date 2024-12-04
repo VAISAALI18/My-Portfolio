@@ -1,0 +1,92 @@
+/* Education Section Styling */
+.education-section {
+    background-color: #c58da3; /* Light pink background */
+    padding: 60px 0; /* Add padding for spacing */
+    width: 100%; /* Ensure the section spans the full width */
+    margin: 0; /* Remove any default margins */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+  }
+  
+  .education-section h2 {
+    color: #0c0c0c; /* Dark text for heading */
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Education Items (Cards) */
+  .education-content {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    justify-content: space-between;
+    gap: 30px; /* Add space between the two sections */
+    flex-wrap: wrap; /* Make it wrap to a single column on smaller screens */
+  }
+  
+  .education-item {
+    flex: 1 1 48%; /* Each section takes 48% of the container width */
+    background: white;
+    border-radius: 8px;
+    padding: 20px; /* Increase padding for larger cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transitions for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden;
+  }
+  
+  /* Hover Effects for Education Cards */
+  .education-item:hover {
+    transform: scale(1.05); /* Slightly increase card size on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add stronger shadow on hover */
+  }
+  
+  /* Timestamp Styling for Education Cards */
+  .education-item::before {
+    content: "Completed: 2022"; /* Example timestamp for Coimbatore Institute of Technology */
+    position: absolute;
+    top: -15px; /* Positioned above the card content */
+    left: 20px; /* Positioned inside the card, aligned with content */
+    color: #ff69b4; /* Pink text for timestamp */
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0; /* Remove background and padding */
+    border: none; /* Remove border for clean appearance */
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  /* Card Title */
+  .education-item h3 {
+    color: #0a0a0a; /* Black color for the title */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Degree Information */
+  .degree, .year, .cgpa, .percentage {
+    font-size: 1rem;
+    color: #333; /* Dark gray for better readability */
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-content {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+  
+    .education-item {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  
+    .education-item::before {
+      top: -10px; /* Adjusted for smaller screens */
+      left: 10px; /* Reduced padding for responsiveness */
+      font-size: 0.75rem;
+    }
+  
+    .education-section h2 {
+      font-size: 1.8rem; /* Slightly smaller heading */
+    }
+  }
+  
